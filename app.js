@@ -45,7 +45,7 @@ app.get('/api/results', async (req, res) => {
 
 module.exports = app;
 const port = process.env.PORT || 3000;
-app.use("/",(req,res) =>{
+app.get("/",(req,res) =>{
     res.send("server is running");
 })
 
